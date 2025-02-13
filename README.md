@@ -38,7 +38,6 @@ Try it here on: [Google Colab](https://tinyurl.com/gaji-word-to-digit-converter)
 
 1. Click on the link to open the Colab notebook.
 2. Run the notebook and follow the on-screen instructions to input word numbers.
-3. Enjoy converting words to digits with ease!
 
 ## Lessons Learned
 - **Number Formatting:** I learned how to use Python’s f-strings with the `:,` specifier to format large numbers for readability.
