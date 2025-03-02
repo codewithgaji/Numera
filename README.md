@@ -13,7 +13,8 @@ The Word to Digits Converter is a Python program that:
 ### Key Features:
 1. **Base Numbers:** Recognizes numbers like "one," "two," etc.
 2. **Tens:** Handles numbers like "twenty," "thirty," etc.
-
+3. **Hundreds, Thousands, Millions, etc.:** Supports large numbers using multiplication logic.
+4. **Number Formatting:** Outputs digit values formatted with commas for better readability.
 
 ## How to Use
 1. Run the script in a Python environment or on Google Colab.
