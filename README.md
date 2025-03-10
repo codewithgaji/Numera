@@ -34,7 +34,7 @@ The Word to Digits Converter is a Python program that:
 | "two billion three"   | 2,000,000,003 |
 
 ## How to Play
-Try it here on: [Google Colab](https://tinyurl.com/gaji-word-to-digit-converter)
+Try it here on [Google Colab](https://tinyurl.com/gaji-word-to-digit-converter)
 
 1. Click on the link to open the Colab notebook.
 2. Run the notebook and follow the on-screen instructions to input word numbers.
