@@ -1,7 +1,7 @@
-# Word to Digits Converter
+# Word to Digits Converter(Numera)
 
 ## Overview
-This project was inspired by a challenge from a friend (@oladayotech) to convert word numbers into digits using Python. It pushed me to explore number formatting for large values such as millions, billions, and trillions for better readability. Additionally, I learned how using multiplication logic simplifies the process compared to creating a dictionary for every possible number up to a trillion.
+This project was inspired by a challenge from a friend (@oladayotech) to convert word numbers into digits using Python. It pushed me to explore number formatting for large values such as millions, billions, and trillions for better readability. Additionally, I learned how using multiplication logic simplifies the process compared to creating a dictionary for every possible number up to a trillion. Today, 4th of April 2025 I made a new release with a decent website for users to try out numera.
 
 ## What This Code Does
 The Word to Digits Converter is a Python program that:
@@ -12,9 +12,10 @@ The Word to Digits Converter is a Python program that:
 
 ### Key Features:
 1. **Base Numbers:** Recognizes numbers like "one," "two," etc.
-2. **Tens:** Handles numbers like "twenty," "thirty," etc.
-3. **Hundreds, Thousands, Millions, etc.:** Supports large numbers using multiplication logic.
-4. **Number Formatting:** Outputs digit values formatted with commas for better readability.
+2. **Teens:** Handles numbers like "thirteen," "sixteen", etc.
+3. **Tens:** Handles numbers like "twenty," "thirty," etc.
+4. **Hundreds, Thousands, Millions, etc.:** Supports large numbers using multiplication logic.
+5. **Number Formatting:** Outputs digit values formatted with commas for better readability.
 
 ## How to Use
 1. Run the script in a Python environment or on Google Colab.
@@ -34,6 +35,7 @@ The Word to Digits Converter is a Python program that:
 | "two billion three"   | 2,000,000,003 |
 
 ## How to Play
+You can now use the web app by clicking [Numera](https://numera-egrx.onrender.com/)
 Try it here on [Google Colab](https://tinyurl.com/gaji-word-to-digit-converter)
 
 1. Click on the link to open the Colab notebook.
@@ -48,5 +50,3 @@ Try it here on [Google Colab](https://tinyurl.com/gaji-word-to-digit-converter)
 
 ---
 Feel free to use and modify the code as needed! Contributions and feedback are welcome.
-
-
