@@ -36,6 +36,7 @@ The Word to Digits Converter is a Python program that:
 
 ## How to Play
 You can now use the web app by clicking [Numera](https://numera-egrx.onrender.com/)
+<br>
 Try it here on [Google Colab](https://tinyurl.com/gaji-word-to-digit-converter)
 
 1. Click on the link to open the Colab notebook.
