@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numera - Word to Digit Converter</title>
+  <link rel="icon" href="{% static 'images/Numera.png' %}" type="image/webp">
+  <!-- Local stylesheet using static tag -->
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+  <!-- External Bootstrap CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">                                                                                                                                                                                   
+          <!-- Load logo from static folder -->
+          <img src="{% static 'images/Numera.png' %}" alt="Numera Logo not found" class="logo"> Numera
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#converter">Converter</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <section class="hero">
+    <div class="container text-center">                                                                                                                                                                                   
+      <h1 class="glowing-text">Convert Words to Digits Instantly</h1>
+      <p class="lead">A simple and easy-to-use tool that transforms word numbers into digit format.</p>
+      <div class="converter-box" id="converter">
+        <input type="text" id="wordInput" placeholder="Enter a word number (e.g., Two hundred forty-five)">
+        <button onclick="convertWordToDigit()" class="convert-btn" id="convertButton" >Convert</button>
+        <p id="result"></p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About</h2>
+      <p class="desc">I'm Gaji Yaqub Ayomikun, a dedicated :=) developer exploring Python, Django, Django Rest Framework, HTML, and CSS in 2025!<br> I enjoy building web apps, APIs, and upskilling into Cloud Computing to create responsive AI-powered applications.</p>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2025 Numer Web App. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+  <script>
+    function convertWordToDigit() {
+      const word = document.getElementById("wordInput").value.trim();
+      if (!word) return;  // Prevent empty input conversion
+  
+      fetch(`/convert/?word=${encodeURIComponent(word)}`)
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById("result").textContent = `Result: ${data.digit}`;
+        })
+        .catch(error => {
+          document.getElementById("result").textContent = "Error: Invalid input";
+        });
+    }
+  
+    // Listen for Enter key press
+    document.getElementById("wordInput").addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault();  // Prevent default Enter behavior
+        convertWordToDigit();  // Call conversion function
+      }
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

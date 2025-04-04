@@ -1,0 +1,124 @@
+/* Import a Google Font for a nicer look */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2); /* Light blue gradient background */
+  color: #1a237e; /* Deep blue text for good contrast */
+  line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #039be5; /* Lively blue */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand, .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-brand .logo {
+  color: #ffbd59;
+  width: 50px;
+  margin-right: 10px;
+}
+
+/* Hero Section */
+.hero {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #81d4fa, #29b6f6); /* Blue gradient */
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero p.lead {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+/* Converter Box */
+.converter-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.converter-box input[type="text"] {
+  padding: 12px;
+  width: 300px;
+  border: 2px solid #039be5;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 80px;
+  font-size: 1rem;
+}
+
+.convert-btn {
+  padding: 24px;
+  background-color: #039be5;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border-width: 1px;
+  margin-top: 18px;
+}
+
+.convert-btn:hover {
+  background-color: #0277bd;
+  color: gold;
+}
+
+#result {
+  margin-top: 15px;
+  font-size: 1.25rem;
+  color: #1a237e;  /* A dark blue or any contrasting color */
+}
+
+
+/* About Section */
+.about-section {
+  padding: 60px 20px;
+  background-color: #e3f2fd;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  color: #0d47a1;
+  margin-bottom: 20px;
+}
+
+.about-section .desc {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: auto;
+  color: #1a237e;
+}
+
+/* Footer */
+footer {
+  background-color: #039be5;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
