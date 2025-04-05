@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: numera
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn numera.wsgi:application"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: numera.settings
+      - key: SECRET_KEY
+        value: vj1p)u9g#vka6y8+kl08+#vsg6a3*%6ysq+$z%8_$8@u4d!0=5
+      - key: DEBUG
+        value: "False"
