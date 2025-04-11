@@ -1,4 +1,9 @@
-# Word to Digits Converter(Numera)
+<p cLass="float-text">
+   <img src="staticfiles/images/Numera.png" width="200px" alt="Numera Image not found">
+</p>
+
+
+# Word to Digits Converter([Numera](https://numera-egrx.onrender.com/))
 
 ## Overview
 This project was inspired by a challenge from a friend (@oladayotech) to convert word numbers into digits using Python. It pushed me to explore number formatting for large values such as millions, billions, and trillions for better readability. Additionally, I learned how using multiplication logic simplifies the process compared to creating a dictionary for every possible number up to a trillion. Today, 4th of April 2025 I made a new release with a decent website for users to try out numera.
