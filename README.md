@@ -48,11 +48,4 @@ Try it here on [Google Colab](https://tinyurl.com/gaji-word-to-digit-converter)
 2. Run the notebook and follow the on-screen instructions to input word numbers.
 3. Enjoy converting words to digits with ease!
 
-## Lessons Learned
-- **Number Formatting:** I learned how to use Python’s f-strings with the `:,` specifier to format large numbers for readability.
-- **Simplified Logic:** Multiplication logic proved to be a more efficient and scalable approach compared to creating a dictionary for all possible numbers up to a trillion.
-- **String Manipulation:** Working with string inputs and splitting them into parts enhanced my understanding of text processing in Python.
-
----
-Feel free to use and modify the code as needed! Contributions and feedback are welcome.
 
