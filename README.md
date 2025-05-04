@@ -54,3 +54,5 @@ Try it here on [Google Colab](https://tinyurl.com/gaji-word-to-digit-converter)
 - **String Manipulation:** Working with string inputs and splitting them into parts enhanced my understanding of text processing in Python.
 
 ---
+Feel free to use and modify the code as needed! Contributions and feedback are welcome.
+
