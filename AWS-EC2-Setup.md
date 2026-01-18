@@ -1,14 +1,14 @@
 # 🚀 Deploying a Django Application on AWS EC2 with Apache & WSGI
 
-This document explains, step by step, how I deployed my first Django application on an AWS EC2 instance using **Apache + mod_wsgi**, including the challenges I faced, discoveries I made, and how I solved them with the help of AI.
+Ehhhh, let me explain how I deployed my first Django application on an AWS EC2 instance using **Apache + mod_wsgi**, including the challenges I faced, discoveries I made, and how I solved them with the help of AI.
 
 ---
 
 ## 📌 Overview
 
-Initially, I attempted to deploy my application like a normal static website using Apache. However, my project turned out to be a **Django application**, which requires a Python execution layer. This led me to learn and configure **WSGI**, the bridge between Apache and Django.
+Initially, I attempted to deploy my application like a normal static website using Apache. But then I realized that the project i was setting up was a **Django application**, which requires a Python execution layer. This led me to learn and configure **WSGI**, the bridge between Apache and Django.
 
-This document covers:
+What I'm about to explain covers:
 - AWS CLI setup and authentication
 - EC2 instance provisioning
 - Fast cloud-based installations
@@ -52,14 +52,15 @@ This links my local terminal directly to my AWS account, allowing me to manage r
 ### Instance Details
 
 - **Name:** Web03
-- **AMI:** Ubuntu Linux (`ami-0ecb62995f68bb549`)
+- **AMI:** Ubuntu Linux (`ami-0ecb62995f68g3begdd9`) Not sure if this should be shown here, lol
 - **Instance Type:** `t3.micro`
 - **Security Group:** `mysg`
 - **Key Pair:** selected during launch (critical for SSH)
 
 ### First Discovery 💡
 
-**Cloud server installations are extremely fast.**
+**Cloud server installations are extremely fast. **
+Trust me, i did not see this coming 😂
 
 Because EC2 instances pull packages directly from optimized cloud mirrors, commands like `apt install` run much faster than on local machines.
 
@@ -68,7 +69,7 @@ Because EC2 instances pull packages directly from optimized cloud mirrors, comma
 ## 🛠 Initial Server Setup
 
 After SSH-ing into the instance:
-
+Not sure if it is "sshing" so just left it with an iphen(is this spelt correctly?)
 ```bash
 apt update
 apt install apache2 wget unzip vim -y
@@ -129,7 +130,7 @@ At this point, I realized something important.
 
 ---
 
-## 🔍 Critical Discovery: This Is a Django Project
+## 🔍 Critical Discovery: This Is a Django Project, lol
 
 My actual page was located at:
 ```
@@ -163,7 +164,7 @@ Browser → Apache → WSGI → Django → Python → Response
 
 ---
 
-## ⚙️ Installing WSGI & Python Environment
+## ⚙️ Installing WSGI & Python Environment - I used AI to explain this part of my doc.
 
 ```bash
 apt install python3-venv python3-pip libapache2-mod-wsgi-py3 -y
