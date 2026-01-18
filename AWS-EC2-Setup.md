@@ -59,7 +59,7 @@ This links my local terminal directly to my AWS account, allowing me to manage r
 
 ### First Discovery 💡
 
-**Cloud server installations are extremely fast. **
+**Cloud server installations are extremely fast.**
 Trust me, i did not see this coming 😂
 
 Because EC2 instances pull packages directly from optimized cloud mirrors, commands like `apt install` run much faster than on local machines.
